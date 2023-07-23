@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SundewCondo.controllers.AdminController">
+  <tabs>
+    <Tab text="Show staff information">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="900.0" style="-fx-background-color: #ebe5d9;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="37.0" prefHeight="2.0" prefWidth="576.0" text="Show staff information" textAlignment="CENTER" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="signOutBtn" layoutX="805.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleSignOutBtnOnAction" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #cc8a56;" text="Sign Out" textFill="WHITE">
+                     <font>
+                        <Font name="Chalkboard Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="accountsTable" layoutX="14.0" layoutY="105.0" prefHeight="636.0" prefWidth="500.0" />
+                  <ImageView fx:id="imageAccount" fitHeight="290.0" fitWidth="321.0" layoutX="546.0" layoutY="161.0" />
+                  <Label layoutX="546.0" layoutY="476.0" prefHeight="45.0" prefWidth="125.0" text="Adresss : " textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="590.0" layoutY="540.0" prefHeight="45.0" prefWidth="125.0" text="Tel : " textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="568.0" layoutY="603.0" prefHeight="45.0" prefWidth="77.0" text="Email : " textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addressLabel" layoutX="644.0" layoutY="476.0" prefHeight="45.0" prefWidth="200.0" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="telLabel" layoutX="644.0" layoutY="540.0" prefHeight="45.0" prefWidth="200.0" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emailLabel" layoutX="644.0" layoutY="603.0" prefHeight="45.0" prefWidth="200.0" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Add  Staff">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="900.0" style="-fx-background-color: #ebe5d9;">
+               <children>
+                  <ImageView fx:id="imageStaff" fitHeight="324.0" fitWidth="310.0" layoutX="295.0" layoutY="66.0" onMousePressed="#AddImage" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/imageIcon.png" />
+                     </image></ImageView>
+                  <TextField fx:id="firstNameTextField" alignment="CENTER" layoutX="199.0" layoutY="407.0" prefHeight="40.0" prefWidth="220.0" promptText="wanida">
+                     <font>
+                        <Font name="Chalkboard Bold" size="18.0" />
+                     </font></TextField>
+                  <TextField fx:id="lastNameTextField" alignment="CENTER" layoutX="604.0" layoutY="407.0" prefHeight="40.0" prefWidth="220.0" promptText="thammapat">
+                     <font>
+                        <Font name="Chalkboard Bold" size="18.0" />
+                     </font></TextField>
+                  <TextField fx:id="telTextField" alignment="CENTER" layoutX="198.0" layoutY="589.0" prefHeight="40.0" prefWidth="220.0" promptText="090-000-0000">
+                     <font>
+                        <Font name="Chalkboard Bold" size="18.0" />
+                     </font></TextField>
+                  <TextField fx:id="emailTextField" alignment="CENTER" layoutX="604.0" layoutY="589.0" prefHeight="40.0" prefWidth="220.0" promptText="sundew@gmail.com">
+                     <font>
+                        <Font name="Chalkboard Bold" size="18.0" />
+                     </font></TextField>
+                  <Label layoutX="34.0" layoutY="408.0" prefHeight="39.0" prefWidth="153.0" text="* First Name  :" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="103.0" layoutY="590.0" prefHeight="39.0" prefWidth="85.0" text="* Tel  :" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="449.0" layoutY="408.0" prefHeight="39.0" prefWidth="134.0" text="* Last Name :" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="518.0" layoutY="591.0" prefHeight="39.0" prefWidth="91.0" text="Email :" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="475.0" layoutY="508.0" prefHeight="27.0" prefWidth="120.0" text="* Address :" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addBtn" layoutX="412.0" layoutY="675.0" mnemonicParsing="false" onAction="#handleAddAccountBtnOnAction" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #cc8a56;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="Chalkboard Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="signOutBtn" layoutX="805.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleSignOutBtnOnAction" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #cc8a56;" text="Sign Out" textFill="WHITE">
+                     <font>
+                        <Font name="Chalkboard Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="295.0" layoutY="12.0" prefHeight="10.0" prefWidth="329.0" text="Add Staff" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="198.0" layoutY="502.0" prefHeight="40.0" prefWidth="220.0" promptText="S0001">
+                     <font>
+                        <Font name="Chalkboard Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="54.0" layoutY="503.0" prefHeight="39.0" prefWidth="127.0" text="* Username :" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addressTextField" alignment="CENTER" layoutX="604.0" layoutY="503.0" prefHeight="39.0" prefWidth="217.0" promptText="7 Lat Phrao Wanghin ">
+                     <font>
+                        <Font name="Chalkboard Bold" size="18.0" />
+                     </font>
+                  </TextField>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Change Password   ">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="900.0" style="-fx-background-color: #ebe5d9;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="285.0" layoutY="59.0" prefHeight="10.0" prefWidth="329.0" text="Change Password" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="180.0" layoutY="215.0" prefHeight="50.0" prefWidth="202.0" text="Current Password   :" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="213.0" layoutY="308.0" prefHeight="50.0" prefWidth="178.0" text="New Password   :" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="194.0" layoutY="401.0" prefHeight="50.0" prefWidth="193.0" text="Verify Password   :" textFill="#864824">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="changePasswordBtn" layoutX="401.0" layoutY="559.0" mnemonicParsing="false" onAction="#handleChangePasswordBtnOnAction" prefHeight="42.0" prefWidth="190.0" style="-fx-background-color: #cc8a56;" text="Change Password" textFill="WHITE">
+                     <font>
+                        <Font name="Chalkboard Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <PasswordField fx:id="currentPasswordField" layoutX="392.0" layoutY="220.0" prefHeight="45.0" prefWidth="280.0">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font></PasswordField>
+                  <PasswordField fx:id="newPasswordField" layoutX="392.0" layoutY="314.0" prefHeight="45.0" prefWidth="280.0">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font></PasswordField>
+                  <PasswordField fx:id="verifyPasswordField" layoutX="391.0" layoutY="408.0" prefHeight="45.0" prefWidth="280.0">
+                     <font>
+                        <Font name="Chalkboard Bold" size="20.0" />
+                     </font></PasswordField>
+                  <Button fx:id="signOutBtn" layoutX="804.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleSignOutBtnOnAction" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #cc8a56;" text="Sign Out" textFill="WHITE">
+                     <font>
+                        <Font name="Chalkboard Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

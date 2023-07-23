@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" style="-fx-background-color: #ebe5d9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SundewCondo.controllers.SignInController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="331.0" layoutY="236.0" prefHeight="49.0" prefWidth="271.0" text="Sign in" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="Chalkboard Bold" size="50.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="328.0" layoutY="375.0" prefHeight="53.0" prefWidth="270.0" promptText="Username">
+         <font>
+            <Font name="Chalkboard Bold" size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="329.0" layoutY="465.0" prefHeight="53.0" prefWidth="274.0" promptText="Password">
+         <font>
+            <Font name="Chalkboard Bold" size="20.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="signInBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="410.0" layoutY="555.0" mnemonicParsing="false" onAction="#handleSignInBtnOnAction" prefHeight="41.0" prefWidth="107.0" style="-fx-background-color: #cc8a56;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="Chalkboard Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="330.0" layoutY="332.0" prefHeight="40.0" prefWidth="268.0" text="Please sign in to your account.">
+         <font>
+            <Font name="Chalkboard Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="programmerBtn" layoutX="763.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleProgrammerBtnOnAction" prefHeight="40.0" prefWidth="117.0" style="-fx-background-color: #cc8a56;" text="Programmer" textFill="WHITE">
+         <font>
+            <Font name="Chalkboard Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="103.0" prefHeight="87.0" prefWidth="663.0" text="Sun Dew Condominium" textFill="#864824">
+         <font>
+            <Font name="Chalkboard Bold" size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="suggestBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSuggestBtnOnAction" prefHeight="41.0" prefWidth="93.0" style="-fx-background-color: #cc8a56;" text="Suggest" textFill="WHITE">
+         <font>
+            <Font name="Chalkboard Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
